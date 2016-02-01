@@ -1,4 +1,5 @@
 /* register the modules the application depends upon here*/
+
 angular.module('listings', []);
 
 /* register the application and inject all the necessary dependencies */
@@ -16,7 +17,7 @@ app.config(['$urlRouterProvider', '$locationProvider',
 ]);
 
 /* set the initial state of the application */
-app.run(['$state', 
+app.run(['$state',
   function($state) {
     $state.go('listings.list');
   }
